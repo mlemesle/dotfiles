@@ -1,0 +1,62 @@
+theme = "kanagawa"
+
+[editor]
+auto-pairs = false
+bufferline = "always"
+color-modes = true
+completion-replace = true
+idle-timeout = 1000
+mouse = false
+middle-click-paste = false
+preview-completion-insert = false
+scrolloff = 999
+scroll-lines = 1
+true-color = true
+
+[editor.statusline]
+left = [
+  "mode",
+  "spinner",
+  "file-name",
+  "read-only-indicator",
+  "file-modification-indicator",
+]
+center = []
+right = ["diagnostics", "selections", "register", "position", "file-encoding"]
+
+[editor.lsp]
+# enable = false
+display-signature-help-docs = false
+display-messages = true
+snippets = false
+
+[editor.file-picker]
+hidden = false
+git-ignore = false
+
+[editor.soft-wrap]
+enable = true
+
+[keys.normal]
+A-q = ":toggle gutters.line-numbers.min-width 110 3"
+C-q = ":buffer-close"
+C-t = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+C-v = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_up",
+  "paste_before",
+]
+
+[keys.select]
+A-q = ":toggle gutters.line-numbers.min-width 110 3"
+C-t = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+C-v = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_up",
+  "paste_before",
+]
+
+[keys.insert]
+A-q = ":toggle gutters.line-numbers.min-width 110 3"
