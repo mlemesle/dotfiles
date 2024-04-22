@@ -32,7 +32,7 @@ if [ -d $root ]; then print_green "$root exists"
 else print_exit "$root does not exist"
 fi
 
-echo "Configuring Helix..."
+echo "Configuring Helix"
 helix_root=$root/helix
 if [ ! -d $helix_root ]; then mkdir $helix_root
 fi
@@ -49,15 +49,6 @@ ln -s -i $current_dir/kitty/kanagawa.conf $kitty_root/kanagawa.conf
 ln -s -i $current_dir/kitty/kitty.conf $kitty_root/kitty.conf
 ln -s -i $current_dir/kitty/session.conf $kitty_root/session.conf
 print_green "Kitty configured"
-
-echo "Configuring Daktilo"
-daktilo_root=$root/daktilo
-if [ ! -d $daktilo_root ]; then mkdir $daktilo_root
-fi
-ln -s -i $current_dir/daktilo/daktilo.toml $daktilo_root/daktilo.toml
-ln -s -i $current_dir/daktilo/press $daktilo_root/press
-ln -s -i $current_dir/daktilo/release $daktilo_root/release
-print_green "Daktilo configured"
 
 echo "Configuring gitui"
 gitui_root=$root/gitui

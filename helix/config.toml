@@ -32,7 +32,7 @@ snippets = false
 
 [editor.file-picker]
 hidden = false
-git-ignore = false
+git-ignore = true
 
 [editor.soft-wrap]
 enable = true
