@@ -4,7 +4,7 @@ theme = "kanagawa"
 auto-pairs = false
 bufferline = "always"
 color-modes = true
-completion-replace = true
+completion-replace = false
 idle-timeout = 1000
 mouse = false
 middle-click-paste = false
@@ -28,7 +28,7 @@ right = ["diagnostics", "selections", "register", "position", "file-encoding"]
 # enable = false
 display-signature-help-docs = false
 display-messages = true
-snippets = false
+snippets = true
 
 [editor.file-picker]
 hidden = false
