@@ -1,4 +1,4 @@
-theme = "kanagawa"
+theme = "monokai_pro_spectrum"
 
 [editor]
 auto-pairs = false
@@ -13,6 +13,9 @@ scrolloff = 999
 scroll-lines = 1
 true-color = true
 
+[editor.inline-diagnostics]
+cursor-line = "hint"
+
 [editor.statusline]
 left = [
   "mode",
@@ -26,9 +29,10 @@ right = ["diagnostics", "selections", "register", "position", "file-encoding"]
 
 [editor.lsp]
 # enable = false
-display-signature-help-docs = false
+display-signature-help-docs = true
 display-messages = true
-snippets = true
+display-progress-messages = true
+snippets = false
 
 [editor.file-picker]
 hidden = false
