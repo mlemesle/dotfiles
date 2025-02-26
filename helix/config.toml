@@ -1,8 +1,8 @@
-theme = "my-kanagawa"
+theme = "kanagawa-custom"
 
 [editor]
 auto-pairs = false
-bufferline = "always"
+bufferline = "multiple"
 color-modes = true
 completion-replace = true
 idle-timeout = 1000
@@ -23,6 +23,7 @@ left = [
   "file-name",
   "read-only-indicator",
   "file-modification-indicator",
+  "version-control",
 ]
 center = []
 right = ["diagnostics", "selections", "register", "position", "file-encoding"]
@@ -33,6 +34,7 @@ display-signature-help-docs = true
 display-messages = true
 display-progress-messages = true
 snippets = false
+display-inlay-hints = true
 
 [editor.file-picker]
 hidden = false
@@ -43,7 +45,7 @@ enable = true
 
 [keys.normal]
 A-q = ":toggle gutters.line-numbers.min-width 110 3"
-C-q = ":buffer-close"
+A-w = ":buffer-close"
 C-t = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 C-v = [
   "extend_to_line_bounds",
