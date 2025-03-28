@@ -13,7 +13,8 @@ print_error() {
 bump() {
   case "$1" in
     kitty )
-      curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin;
+      curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin \
+        launch=n;
       print_success $1;
       ;;
 

@@ -14,3 +14,4 @@ copy-on-select = false
 window-theme = dark
 fullscreen = true
 window-decoration = false
+custom-shader = ./crt-shader.glsl

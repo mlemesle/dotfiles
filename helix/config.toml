@@ -12,6 +12,9 @@ preview-completion-insert = false
 scrolloff = 999
 scroll-lines = 1
 true-color = true
+insert-final-newline = true
+trim-final-newlines = true
+trim-trailing-whitespace = true
 
 [editor.inline-diagnostics]
 cursor-line = "hint"
@@ -34,7 +37,7 @@ display-signature-help-docs = true
 display-messages = true
 display-progress-messages = true
 snippets = false
-display-inlay-hints = true
+display-inlay-hints = false
 
 [editor.file-picker]
 hidden = false
@@ -54,6 +57,7 @@ C-v = [
   "paste_before",
 ]
 C-r = ":lsp-restart"
+C-i = ":toggle lsp.display-inlay-hints"
 
 [keys.select]
 A-q = ":toggle gutters.line-numbers.min-width 110 3"
@@ -65,7 +69,9 @@ C-v = [
   "paste_before",
 ]
 C-r = ":lsp-restart"
+C-i = ":toggle lsp.display-inlay-hints"
 
 [keys.insert]
 A-q = ":toggle gutters.line-numbers.min-width 110 3"
 C-r = ":lsp-restart"
+C-i = ":toggle lsp.display-inlay-hints"
