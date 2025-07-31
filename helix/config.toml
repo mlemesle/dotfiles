@@ -1,4 +1,4 @@
-theme = "kanagawa-custom"
+theme = "catppuccin_mocha"
 
 [editor]
 auto-pairs = false
@@ -37,7 +37,7 @@ display-signature-help-docs = true
 display-messages = true
 display-progress-messages = true
 snippets = false
-display-inlay-hints = false
+display-inlay-hints = true
 
 [editor.file-picker]
 hidden = false
