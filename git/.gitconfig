@@ -1,0 +1,31 @@
+[user]
+	email = lemesle.martin@hotmail.fr
+	name = Martin Lemesle
+	signingKey = 95C2E699E800BF75
+
+[color]
+	ui = auto
+
+[core]
+	pager = bat
+	editor = hx
+
+[diff]
+	mnemonicPrefix = true
+	renames = true
+	external = difft
+
+[init]
+	defaultBranch = main
+
+[commit]
+	gpgSign = true
+
+[push]
+	default = upstream
+
+[status]
+	showUntrackedFiles = all
+
+[tag]
+	gpgSign = true
